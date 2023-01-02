@@ -8,12 +8,12 @@ part of 'firebase_count.dart';
 
 _$_FirebaseCount _$$_FirebaseCountFromJson(Map<String, dynamic> json) =>
     _$_FirebaseCount(
-      datatime: DateTime.parse(json['datatime'] as String),
+      dateTime: DateTime.parse(json['dateTime'] as String),
       count: json['count'] as int,
     );
 
 Map<String, dynamic> _$$_FirebaseCountToJson(_$_FirebaseCount instance) =>
     <String, dynamic>{
-      'datatime': instance.datatime.toIso8601String(),
+      'dateTime': instance.dateTime.toIso8601String(),
       'count': instance.count,
     };

@@ -7,7 +7,7 @@ part 'firebase_count.g.dart';
 @freezed
 class FirebaseCount with _$FirebaseCount {
   const factory FirebaseCount({
-    required DateTime datatime,
+    required DateTime dateTime,
     required int count,
   }) = _FirebaseCount;
 

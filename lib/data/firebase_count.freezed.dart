@@ -20,7 +20,7 @@ FirebaseCount _$FirebaseCountFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$FirebaseCount {
-  DateTime get datatime => throw _privateConstructorUsedError;
+  DateTime get dateTime => throw _privateConstructorUsedError;
   int get count => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -35,7 +35,7 @@ abstract class $FirebaseCountCopyWith<$Res> {
           FirebaseCount value, $Res Function(FirebaseCount) then) =
       _$FirebaseCountCopyWithImpl<$Res, FirebaseCount>;
   @useResult
-  $Res call({DateTime datatime, int count});
+  $Res call({DateTime dateTime, int count});
 }
 
 /// @nodoc
@@ -51,13 +51,13 @@ class _$FirebaseCountCopyWithImpl<$Res, $Val extends FirebaseCount>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? datatime = null,
+    Object? dateTime = null,
     Object? count = null,
   }) {
     return _then(_value.copyWith(
-      datatime: null == datatime
-          ? _value.datatime
-          : datatime // ignore: cast_nullable_to_non_nullable
+      dateTime: null == dateTime
+          ? _value.dateTime
+          : dateTime // ignore: cast_nullable_to_non_nullable
               as DateTime,
       count: null == count
           ? _value.count
@@ -75,7 +75,7 @@ abstract class _$$_FirebaseCountCopyWith<$Res>
       __$$_FirebaseCountCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({DateTime datatime, int count});
+  $Res call({DateTime dateTime, int count});
 }
 
 /// @nodoc
@@ -89,13 +89,13 @@ class __$$_FirebaseCountCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? datatime = null,
+    Object? dateTime = null,
     Object? count = null,
   }) {
     return _then(_$_FirebaseCount(
-      datatime: null == datatime
-          ? _value.datatime
-          : datatime // ignore: cast_nullable_to_non_nullable
+      dateTime: null == dateTime
+          ? _value.dateTime
+          : dateTime // ignore: cast_nullable_to_non_nullable
               as DateTime,
       count: null == count
           ? _value.count
@@ -108,19 +108,19 @@ class __$$_FirebaseCountCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_FirebaseCount with DiagnosticableTreeMixin implements _FirebaseCount {
-  const _$_FirebaseCount({required this.datatime, required this.count});
+  const _$_FirebaseCount({required this.dateTime, required this.count});
 
   factory _$_FirebaseCount.fromJson(Map<String, dynamic> json) =>
       _$$_FirebaseCountFromJson(json);
 
   @override
-  final DateTime datatime;
+  final DateTime dateTime;
   @override
   final int count;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'FirebaseCount(datatime: $datatime, count: $count)';
+    return 'FirebaseCount(dateTime: $dateTime, count: $count)';
   }
 
   @override
@@ -128,7 +128,7 @@ class _$_FirebaseCount with DiagnosticableTreeMixin implements _FirebaseCount {
     super.debugFillProperties(properties);
     properties
       ..add(DiagnosticsProperty('type', 'FirebaseCount'))
-      ..add(DiagnosticsProperty('datatime', datatime))
+      ..add(DiagnosticsProperty('dateTime', dateTime))
       ..add(DiagnosticsProperty('count', count));
   }
 
@@ -137,14 +137,14 @@ class _$_FirebaseCount with DiagnosticableTreeMixin implements _FirebaseCount {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_FirebaseCount &&
-            (identical(other.datatime, datatime) ||
-                other.datatime == datatime) &&
+            (identical(other.dateTime, dateTime) ||
+                other.dateTime == dateTime) &&
             (identical(other.count, count) || other.count == count));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, datatime, count);
+  int get hashCode => Object.hash(runtimeType, dateTime, count);
 
   @JsonKey(ignore: true)
   @override
@@ -162,14 +162,14 @@ class _$_FirebaseCount with DiagnosticableTreeMixin implements _FirebaseCount {
 
 abstract class _FirebaseCount implements FirebaseCount {
   const factory _FirebaseCount(
-      {required final DateTime datatime,
+      {required final DateTime dateTime,
       required final int count}) = _$_FirebaseCount;
 
   factory _FirebaseCount.fromJson(Map<String, dynamic> json) =
       _$_FirebaseCount.fromJson;
 
   @override
-  DateTime get datatime;
+  DateTime get dateTime;
   @override
   int get count;
   @override
