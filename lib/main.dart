@@ -135,6 +135,25 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             Text('$_counter', style: Theme.of(context).textTheme.bodyLarge),
+            Consumer(builder: ((context, ref, child) {
+              final provider = ref.watch(streamProvider);
+              return provider.when(
+                  data: (data) {
+                    return ListView.builder(
+                        shrinkWrap: true,
+                        physics: NeverScrollableScrollPhysics(),
+                        itemBuilder: ((context, index) {
+                          FirebaseCount countData = data[index];
+
+                          return ListTile(
+                            title: Text("${countData.dateTime}"),
+                            trailing: Text("${countData.count}"),
+                          );
+                        }));
+                  },
+                  error: (error, stackTrace) => Text(error.toString()),
+                  loading: (() => CircularProgressIndicator()));
+            }))
           ],
         ),
       ),
