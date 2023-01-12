@@ -7,9 +7,9 @@
     <item>
       <title>Version 2.0</title>
       <link>https://sparkle-project.org</link>
-      <sparkle:version>2.2.0</sparkle:version>
+      <sparkle:version>3.2.0</sparkle:version>
       <description>
-      <![CDATA[テストです。これは]]>
+      <![CDATA[テストです。違います]]>
       </description>
       <pubDate>Sat, 26 Jul 2014 15:20:11 +0000</pubDate>
       <enclosure url="https://apps.apple.com/us/app/id1627130379" length="107758" type="application/octet-stream" sparkle:edSignature="7cLALFUHSwvEJWSkV8aMreoBe4fhRa4FncC5NoThKxwThL6FDR7hTiPJh1fo2uagnPogisnQsgFgq6mGkt2RBw=="/>
